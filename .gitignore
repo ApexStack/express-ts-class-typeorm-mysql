@@ -1,0 +1,11 @@
+# Node.js
+/node_modules/
+
+# Dependencies
+/package-lock.json
+
+# Dist folder
+/dist/
+
+# Log folder
+/log/
