@@ -1,7 +1,7 @@
 import express, { Application } from "express";
 import { routes } from "./routes";
 import { errorMiddleWare } from "./middleware/error.middleware";
-import { AppDataSource } from "./database/Orm.confi";
+import { AppDataSource } from "./database/orm.config";
 import * as dotenv from 'dotenv';
 import "reflect-metadata"; // For Dependency Injection
 
