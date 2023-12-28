@@ -1,5 +1,5 @@
 import { Router } from "express";
-import helloRoute from "./routes/hello.route";
+import helloRoute from "./hello.route";
 
 export const routes = Router();
 
