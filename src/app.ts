@@ -4,6 +4,7 @@ import { errorMiddleWare } from "./middleware/error.middleware";
 import { AppDataSource } from "./database/orm.config";
 import * as dotenv from 'dotenv';
 import "reflect-metadata"; // For Dependency Injection
+import cors from 'cors';
 
 dotenv.config();
 
@@ -19,6 +20,7 @@ class App {
   private config(): void {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: false }));
+    this.app.use(cors());
     AppDataSource
   }
 
